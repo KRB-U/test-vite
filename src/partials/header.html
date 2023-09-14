@@ -1,13 +1,52 @@
-<header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
+<header class="top-header" id="home">
+  <div class="top-header-container container">
+    <nav class="header-menu-nav">
+      <ul class="header-menu-list">
+        <li class="header-menu-item">
+          <a class="header-menu-link" href="#home">Home</a>
+        </li>
+        <li class="header-menu-item">
+          <a class="header-menu-link" href="#made">Favorites</a>
+        </li>
+      </ul>
+    </nav>
 
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
+    <a class="header-logo" href="./index.html">
+      <span class="header-logo-part">tasty</span>treats.
+    </a>
+    <svg class="basket-icon" width="24" height="24">
+      <use href="./img/icons.svg#basket"></use>
+    </svg>
+    <svg class="switch-icon" width="46" height="20">
+      <use href="./img/icons.svg#switch"></use>
+    </svg>
+
+    <!-- button-toggle -->
+    <button
+      class="menu-toggle js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg class="icon-burger-btn">
+        <use href="./img/icons.svg#burger"></use>
+      </svg>
+    </button>
+  </div>
 </header>
+
+<div class="menu-container js-menu-container" id="mobile-menu">
+  <button class="menu-toggle js-close-menu">
+    <svg class="menu-toggle-close-btn">
+      <use href="./img/icons.svg#icon-x-close"></use>
+    </svg>
+  </button>
+
+  <ul class="mobile-menu">
+    <li class="mobile-menu-items">
+      <a href="#home" class="mobile-menu-link">Home</a>
+    </li>
+    <li class="mobile-menu-items">
+      <a href="#made" class="mobile-menu-link">How it’s made?</a>
+    </li>
+  </ul>
+</div>
