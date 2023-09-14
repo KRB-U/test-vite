@@ -1,26 +1,51 @@
 <section class="section hero-item container">
-  <div class="hero-container">
-    <div class="control-btn">
-      <button type="submit" class="buy-btn js-open-modal" data-modal="2">
-        Buy now
-      </button>
-      <a class="how-its-made-lnk" href="#made">How it’s made</a>
-      <a class="scr-btn" href="#footer" aria-label="link on the footer">
-        scroll down
-        <div class="bck-color-icon">
-          <svg class="scr-btn-icon">
-            <use href="./img/icons.svg#icon-scroll-down"></use>
-          </svg>
+  <!-- .hero-container > .left-side-->
+  <div class="left-side">
+    <h1 class="hero-title">
+      Learn to Cook
+      <span class="hero-title-part">&nbsp;Tasty Treats'&nbsp;</span>
+      Customizable Masterclass
+    </h1>
+
+    <p class="hero-desc">
+      TastyTreats - Customize Your Meal with Ingredient Options and Step-by-Step
+      Video Guides.
+    </p>
+
+    <!-- <load
+      src="partials/components/button.html"
+      btn-class="hero-order-btn"
+      btn-type="submit"
+      btn-text="Order now"
+    /> -->
+    <button type="submit" class="hero-order-btn js-open-modal" data-modal="2">
+      Buy now
+    </button>
+  </div>
+
+  <div class="right-side">
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="chief">
+            <img class="chief-pic" src="" alt="" height="100" />
+          </div>
+
+          <div class="dish">
+            <img class="dish-img" src="" alt="" />
+            <h1 class="dish-title"></h1>
+            <p class="dish-country"></p>
+          </div>
+
+          <div class="preview">
+            <img class="preview-img" src="" alt="" />
+          </div>
         </div>
-      </a>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
     </div>
   </div>
-  <button class="scr-btn up scroll-up-btn" type="button">
-    scroll up
-    <span class="bck-color-icon">
-      <svg class="scr-btn-icon up">
-        <use href="./img/icons.svg#icon-scroll-down"></use>
-      </svg>
-    </span>
-  </button>
 </section>
