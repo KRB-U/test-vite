@@ -6,83 +6,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
     
-    <script type="module" crossorigin src="/vanilla-app-template/assets/index-c45ada6b.js"></script>
-    <link rel="stylesheet" href="/vanilla-app-template/assets/index-10c40100.css">
+    <script type="module" crossorigin src="/vanilla-app-template/assets/index-4c806744.js"></script>
+    <link rel="stylesheet" href="/vanilla-app-template/assets/index-23804752.css">
   </head>
   <body>
-    <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
+    <header class="top-header" id="home">
+  <div class="top-header-container container">
+    <nav class="header-menu-nav">
+      <ul class="header-menu-list">
+        <li class="header-menu-item">
+          <a class="header-menu-link" href="#home">Home</a>
+        </li>
+        <li class="header-menu-item">
+          <a class="header-menu-link" href="#made">Favorites</a>
+        </li>
+      </ul>
+    </nav>
 
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
+    <a class="header-logo" href="./index.html">
+      <span class="header-logo-part">tasty</span>treats.
+    </a>
+    <svg class="basket-icon" width="24" height="24">
+      <use href="/vanilla-app-template/assets/icons-bad3dd48.svg#basket"></use>
+    </svg>
+    <svg class="switch-icon" width="46" height="20">
+      <use href="/vanilla-app-template/assets/icons-bad3dd48.svg#switch"></use>
+    </svg>
+
+    <!-- button-toggle -->
+    <button
+      class="menu-toggle js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg class="icon-burger-btn">
+        <use href="/vanilla-app-template/assets/icons-bad3dd48.svg#burger"></use>
+      </svg>
+    </button>
+  </div>
 </header>
 
+<div class="menu-container js-menu-container" id="mobile-menu">
+  <button class="menu-toggle js-close-menu">
+    <svg class="menu-toggle-close-btn">
+      <use href="/vanilla-app-template/assets/icons-bad3dd48.svg#icon-x-close"></use>
+    </svg>
+  </button>
 
-    <svg class="basket" width="20" height="20">
+  <ul class="mobile-menu">
+    <li class="mobile-menu-items">
+      <a href="#home" class="mobile-menu-link">Home</a>
+    </li>
+    <li class="mobile-menu-items">
+      <a href="#made" class="mobile-menu-link">How it’s made?</a>
+    </li>
+  </ul>
+</div>
+
+    <section class="section hero-item container">
+  <div class="hero-container">
+    <div class="control-btn">
+      <button type="submit" class="buy-btn js-open-modal" data-modal="2">
+        Buy now
+      </button>
+      <a class="how-its-made-lnk" href="#made">How it’s made</a>
+      <a class="scr-btn" href="#footer" aria-label="link on the footer">
+        scroll down
+        <div class="bck-color-icon">
+          <svg class="scr-btn-icon">
+            <use href="/vanilla-app-template/assets/icons-bad3dd48.svg#icon-scroll-down"></use>
+          </svg>
+        </div>
+      </a>
+    </div>
+  </div>
+  <button class="scr-btn up scroll-up-btn" type="button">
+    scroll up
+    <span class="bck-color-icon">
+      <svg class="scr-btn-icon up">
+        <use href="/vanilla-app-template/assets/icons-bad3dd48.svg#icon-scroll-down"></use>
+      </svg>
+    </span>
+  </button>
+</section>
+
+
+    <!-- <svg class="basket" width="20" height="20">
       <use href="./img/icons.svg#basket"></use>
     </svg>
+
+    <svg class="burger" width="20" height="20">
+      <use href="./img/icons.svg#burger"></use>
+    </svg>
+
+    <svg class="close" width="20" height="20">
+      <use href="./img/icons.svg#close"></use>
+    </svg>
+
+    <svg class="heart" width="20" height="20">
+      <use href="./img/icons.svg#heart"></use>
+    </svg>
+    <svg class="search" width="20" height="20">
+      <use href="./img/icons.svg#search"></use>
+    </svg>
+    <svg class="star" width="20" height="20">
+      <use href="./img/icons.svg#star"></use>
+    </svg>
+    <svg class="switch" width="20" height="20">
+      <use href="./img/icons.svg#switch"></use>
+    </svg>
+    <svg class="toque" width="20" height="20">
+      <use href="./img/icons.svg#toque"></use>
+    </svg> -->
 
     <section>
       <!-- <h1>Lorem ipsum dolor sit amet.</h1> -->
       <!-- Path to images as from index.html file -->
-      <img src="/vanilla-app-template/assets/javascript-8dac5379.svg" alt="" />
+      <!-- <img src="./img/javascript.svg" alt="" /> -->
     </section>
-
     <!-- Loads the specified .html file -->
-    <!-- <section class="vite-promo">
-  <div class="container">
-    <div class="wrapper">
-      <h2 class="title">
-        <span class="gradient">Vite</span>
-      </h2>
-      <p class="text">Next Generation Frontend Tooling</p>
-      <p class="tagline">
-        Get ready for a development environment that can finally catch up with
-        you.
-      </p>
-
-      <ul class="actions">
-        <li class="action">
-          <a
-            class="link"
-            href="https://vitejs.dev/guide/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Get Started</a
-          >
-        </li>
-        <li class="action">
-          <a
-            class="link"
-            href="https://github.com/vitejs/vite"
-            target="_blank"
-            rel="noopener noreferrer"
-            >View on GitHub</a
-          >
-        </li>
-      </ul>
-    </div>
-
-    <div class="thumb"> -->
-<!-- Path to images as from index.html file -->
-<!-- <img
-        class="pic"
-        src="./img/vite-logo.png"
-        alt="Vite logo"
-        width="640"
-        height="640"
-      />
-    </div>
-  </div>
-</section> -->
-
+    <!-- ENOENT: no such file or directory, open '/home/runner/work/test-vite/test-vite/src/partials/vite-promo.html' -->
 
     
   </body>
